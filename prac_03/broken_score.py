@@ -7,9 +7,9 @@ import random
 
 def main():
     score = float(input("Enter score: "))
-    print("Your score is:{:.0f}, is {}".format(score,check(score)))
-    randomscore = random.randint(0,100)
-    print("Your score is:{:.0f}, is {}".format(randomscore,check(randomscore)))
+    print("Your score is:{:.0f}, is {}".format(score, check(score)))
+    randomscore = random.randint(0, 100)
+    print("Your score is:{:.0f}, is {}".format(randomscore, check(randomscore)))
 
 
 def check(score):

@@ -29,9 +29,10 @@ def get_data():
     input_file.close()
     return data
 
+
 def print_data(datas):
     for data in datas:
-        print("{} is taught by {:<14} and has {:>3} students".format(data[0],data[1],data[2]))
+        print("{} is taught by {:<14} and has {:>3} students".format(data[0], data[1], data[2]))
 
 
 main()

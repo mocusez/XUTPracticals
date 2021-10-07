@@ -8,6 +8,9 @@ line_number = int(input("How many quick picks? "))
 for i in range(line_number):
     line = []
     for j in range(NUMBERS_PER_LINE):
+        number = random.randint(MINNUM, MAXNUM)
+        while number in line:
+            number = random.randint(MINNUM, MAXNUM)
         line.append(random.randint(MINNUM, MAXNUM))
     line.sort()
     # Traditional

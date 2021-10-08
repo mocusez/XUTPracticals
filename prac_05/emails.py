@@ -31,15 +31,10 @@ def format_name(email: str):
 
 
 def judge_input():
-    result = input().upper()[0]
-    while result != "":
-        if result == "Y":
-            return True
-        elif result == "N":
-            return False
-        else:
-            print("Invalid input!")
-            result = input().upper()[0]
+    result = input().upper()
+    if result != "" and result != "Y":
+        return None
+    return True
 
 
 def input_email():

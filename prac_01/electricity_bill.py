@@ -8,7 +8,7 @@ cents_per_kwh = 1
 
 while tariff != 11:
     print("Error, please choose one of the options")
-    tariff = int(input("Which tarrif are you using? 11 or 31: "))
+    tariff = int(input("Which tariff are you using? 11 or 31: "))
 if tariff == 11:
     cents_per_kwh = TARIFF_11
 elif tariff == 31:

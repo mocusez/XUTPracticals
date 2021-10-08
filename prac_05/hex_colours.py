@@ -13,3 +13,10 @@ while name != "":
     except KeyError:
         print("Invalid colour name!")
     name = input("Enter a colour name: ").lower()
+
+# while colour_name != "":
+#     # Note: using the get dictionary method
+#     # means you will get None if the key is not found
+#     print("The code for \"{}\" is {}".format(name,
+#                                              NAMES.get(colour_name)))
+#     colour_name = input("Enter a colour name: ")

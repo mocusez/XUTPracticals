@@ -6,5 +6,6 @@ for word in words:
     previous_count = word_count.get(word, 0)
     word_count[word] = previous_count + 1
 
+max_length = max((len(word) for word in words))
 for i in sorted(word_count):
-    print("{:{}} : {}".format(i, len(word_count), word_count[i]))
+    print("{:{}} : {}".format(i, max_length, word_count[i]))
